@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WesMenezes - Personal Trainer Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'bebas': ['"Bebas Neue"', 'cursive'],
+              'gothic': ['Montserrat', 'sans-serif'], // Montserrat é o par perfeito para o estilo Century Gothic
+            },
+            colors: {
+              wes: {
+                cyan: '#27A9E1',
+                blue: '#1B75BB',
+                greyMid: '#BBBDC0',
+                greyLight: '#E6E7E8',
+                dark: '#404040',
+                bg: '#F3F4F6'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      .logo-text-dark { color: #404040; }
+      .logo-text-light { color: #BBBDC0; }
+
+      @media print {
+        body > #root > div > nav,
+        body > #root > div > main,
+        .print-hidden,
+        button {
+          display: none !important;
+        }
+
+        body > #root > div {
+          padding-left: 0 !important;
+          margin: 0 !important;
+        }
+
+        .fixed.inset-0 {
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: auto !important;
+          background: white !important;
+          display: block !important;
+          z-index: 9999 !important;
+        }
+
+        .bg-white {
+          border: none !important;
+          box-shadow: none !important;
+          border-radius: 0 !important;
+        }
+
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #BBBDC0;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #27A9E1;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-wes-bg text-wes-dark font-gothic">
+    <div id="root"></div>
+</body>
+</html>

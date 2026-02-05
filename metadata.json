@@ -1,0 +1,5 @@
+{
+  "name": "Personal Trainer Attendance Tracker",
+  "description": "A student attendance and credit management system with automatic balance tracking, cycle expiration calculation, and quick check-in functionality.",
+  "requestFramePermissions": []
+}
